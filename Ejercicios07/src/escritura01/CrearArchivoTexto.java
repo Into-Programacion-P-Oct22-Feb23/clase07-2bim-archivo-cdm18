@@ -10,7 +10,7 @@ public class CrearArchivoTexto {
         try {
             Formatter salida = new Formatter("data/salidaDatosPersonales.txt");
             salida.format("%s\n", valor);
-            salida.close();
+            salida.close(); //necesario cerrar o sino se satura
 
         } catch (Exception e) {
             System.err.println("Error al crear el archivo.");
